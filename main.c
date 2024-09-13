@@ -856,7 +856,7 @@ void supprimer_premier_num_elm(){
         scanf("%s",nv_nom);
 
         //rechercher l'etudient dans la list des etudients
-        for(i=etudiants_c;i>=0;i--){
+        for(i=0;i<etudiants_c;i++){
             //si le l'etudient est trouver supprimer le
             if(strcmp(nv_nom,etudiants[i].nom)==0){
                 //Decrementer le compteur d'etudients par 1
@@ -876,7 +876,7 @@ void supprimer_premier_num_elm(){
                if(delete_count == 2){
                 break;
                }
-                i++;
+                i--;
             }
         }
 
