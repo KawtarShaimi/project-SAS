@@ -876,7 +876,7 @@ void supprimer_premier_num_elm(){
                if(delete_count == 2){
                 break;
                }
-                i--;
+                i++;
             }
         }
 
